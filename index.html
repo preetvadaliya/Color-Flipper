@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Color Flipper</title>
+
+    <style>
+        .screen {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #212121;
+        }
+
+        body    {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #color-name {
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            color: white;
+        }
+    </style>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body class="mdc-typography">
+
+    <div class="screen" id="screen1">
+        <h2 id="color-name">Current Color is : #212121</h2>
+        <button class="mdc-button mdc-button--raised" onclick="changeColor()">
+            <span class="mdc-button__label">Click Here For Change Color</span>
+        </button>
+    </div>
+
+</body>
+
+</html>
